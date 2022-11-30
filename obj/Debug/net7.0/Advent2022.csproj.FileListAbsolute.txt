@@ -1,0 +1,15 @@
+/Users/adamstevens/Documents/dev/Advent2022/bin/Debug/net7.0/Advent2022
+/Users/adamstevens/Documents/dev/Advent2022/bin/Debug/net7.0/Advent2022.deps.json
+/Users/adamstevens/Documents/dev/Advent2022/bin/Debug/net7.0/Advent2022.runtimeconfig.json
+/Users/adamstevens/Documents/dev/Advent2022/bin/Debug/net7.0/Advent2022.dll
+/Users/adamstevens/Documents/dev/Advent2022/bin/Debug/net7.0/Advent2022.pdb
+/Users/adamstevens/Documents/dev/Advent2022/obj/Debug/net7.0/Advent2022.csproj.AssemblyReference.cache
+/Users/adamstevens/Documents/dev/Advent2022/obj/Debug/net7.0/Advent2022.GeneratedMSBuildEditorConfig.editorconfig
+/Users/adamstevens/Documents/dev/Advent2022/obj/Debug/net7.0/Advent2022.AssemblyInfoInputs.cache
+/Users/adamstevens/Documents/dev/Advent2022/obj/Debug/net7.0/Advent2022.AssemblyInfo.cs
+/Users/adamstevens/Documents/dev/Advent2022/obj/Debug/net7.0/Advent2022.csproj.CoreCompileInputs.cache
+/Users/adamstevens/Documents/dev/Advent2022/obj/Debug/net7.0/Advent2022.dll
+/Users/adamstevens/Documents/dev/Advent2022/obj/Debug/net7.0/refint/Advent2022.dll
+/Users/adamstevens/Documents/dev/Advent2022/obj/Debug/net7.0/Advent2022.pdb
+/Users/adamstevens/Documents/dev/Advent2022/obj/Debug/net7.0/Advent2022.genruntimeconfig.cache
+/Users/adamstevens/Documents/dev/Advent2022/obj/Debug/net7.0/ref/Advent2022.dll
