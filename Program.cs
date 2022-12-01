@@ -1,6 +1,7 @@
 ﻿Console.WriteLine("Advent 2022");
 
 PrintAnswer(1, 1, Advent2022.DayOne.Program.GetAnswer1());
+PrintAnswer(1, 2, Advent2022.DayOne.Program.GetAnswer2());
 
 
 
