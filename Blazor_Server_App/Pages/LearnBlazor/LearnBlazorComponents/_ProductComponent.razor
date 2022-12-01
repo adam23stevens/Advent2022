@@ -1,0 +1,54 @@
+﻿<div class="col-6" @onclick="(args) => onSelectedProductChange(args, Product.Name)">
+    <h4 class="text-secondary">@Product.Name</h4>
+    <hr />
+    <div class="border p-3">
+        <strong>Add to favourites? </strong><input type="checkbox" onchange="@onSelectedChange" /> <br />
+        <strong>Price £: </strong>@Product.Price <br />
+        <strong>Render Fragments from Parent: </strong>@FirstFragment @SecondFragment
+        <strong>Is Active: </strong> <input type="checkbox" @bind="@Product.IsActive" />
+    </div>
+    <br />
+    @if (Product.IsActive)
+    {
+        <strong>Properties</strong>
+        <table class="table">
+            @foreach (var prop in Product.ProductProperties)
+            {
+                <tr>
+                    <td>@prop.Key</td>
+                    <td>@prop.Value</td>
+                </tr>
+            }
+        </table>
+    }
+    <br />
+    <_EditDeleteButton IsActive="@Product.IsActive" />
+</div>
+
+@code {
+    [Parameter]
+    public Product Product { get; set; }
+
+    [Parameter]
+    public EventCallback<bool> onSelectedFavourite { get; set; }
+
+    [Parameter]
+    public EventCallback<string> onSelectedProduct { get; set; }
+
+    [Parameter]
+    public RenderFragment FirstFragment { get; set; }
+
+    [Parameter]
+    public RenderFragment SecondFragment { get; set; }
+
+    private async Task onSelectedChange(Microsoft.AspNetCore.Components.ChangeEventArgs e)
+    {
+        await onSelectedFavourite.InvokeAsync((bool)e.Value);
+    }
+
+    private async Task onSelectedProductChange(MouseEventArgs e, string productName)
+    {
+        await onSelectedProduct.InvokeAsync(productName);
+    }
+}
+

@@ -1,0 +1,114 @@
+﻿@page "/product"
+@inject IProductRepository _productRepository
+@inject IJSRuntime jsRuntime;
+@inject IFileUpload _fileUpload;
+
+<div class="row mt-4">
+    <div class="col-6">
+        <h4 class="card-title text-primary">Products</h4>
+    </div>
+    <div class="col-4 offset-2">
+        <a href="product/create" class="btn btn-primary form-control">Add New Product</a>
+    </div>
+    <div class="col-12">
+        @if (Products.Any())
+        {
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>Shop Favourite?</th>
+                        <th>Customer Favourite?</th>
+                        <th>Category</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var product in Products)
+                    {
+                        <tr>
+                            <td>
+                                @product.Name
+                            </td>
+                            <td>
+                                <input type="checkbox" disabled @bind="@product.IsShopFavourite" />
+                            </td>
+                            <td>
+                                <input type="checkbox" disabled @bind="@product.IsCustomerFavourite" />
+                            </td>
+                            <td>@product.Category.Name</td>
+                            <td>
+                                <NavLink href="@($"/product/edit/{product.Id}")" class="btn btn-primary">Edit</NavLink>
+                                <button class="btn btn-danger" @onclick="() => OnClickDelete(product.Id)">Delete</button>
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        }
+        else if (IsLoading)
+        {
+            <div class="text-center">
+                <img src="/images/loading-gif.gif" />
+            </div>
+        }
+        else
+        {
+            <p>No records found</p>
+        }
+    </div>
+</div>
+<_DeleteConfirmation OnDeleteConfirm="ConfirmDelete_Click" IsParentProcessing="IsLoading"></_DeleteConfirmation>
+
+@code {
+    private IEnumerable<ProductDTO> Products { get; set; } = new List<ProductDTO>();
+    public bool IsLoading { get; set; }
+    private int deleteProductId { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            GetProducts();
+        }
+
+    }
+
+    private async Task GetProducts()
+    {
+        IsLoading = true;
+        StateHasChanged();
+        Products = await _productRepository.GetAll();
+        IsLoading = false;
+        StateHasChanged();
+    }
+
+    private void OnClickDelete(int id)
+    {
+        deleteProductId = id;
+        jsRuntime.InvokeVoidAsync("ShowConfirmationModal");
+    }
+
+    public async Task ConfirmDelete_Click(bool isConfirmed)
+    {
+        IsLoading = true;
+        if (isConfirmed && deleteProductId != 0)
+        {
+            var product = await _productRepository.Get(deleteProductId);
+            if (!product.ImageUrl.Contains("default.jpeg"))
+            {
+                _fileUpload.DeleteFile(product.ImageUrl);
+            }
+            await _productRepository.Delete(deleteProductId);
+            await GetProducts();
+            await jsRuntime.InvokeVoidAsync("HideConfirmationModal");
+
+            await jsRuntime.ToastrSuccess("Deleted file successfully");
+        }
+        IsLoading = false;
+    }
+}
+

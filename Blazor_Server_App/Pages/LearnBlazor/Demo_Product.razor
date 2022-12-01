@@ -1,0 +1,170 @@
+﻿@page  "/learnBlazor/demoProducts"
+
+<h2 class="text-primary">Demo Products</h2>
+<hr />
+<h4 class="text-secondary">Favourites: @FavouriteCount</h4>
+<br />
+<h4 class="text-secondary">Last selected product: @LastSelectedProductName</h4>
+@for (int r = 0; r < products.Count; r += 2)
+{
+    <div class="row alert-secondary mb-4">
+        @foreach (var product in products.Skip(r).Take(2))
+        {
+            <_ProductComponent Product="@product" onSelectedFavourite="FavouritedUpdate" onSelectedProduct="LastSelectedProductUpdate">
+                <FirstFragment><p>#1</p></FirstFragment>
+                <SecondFragment><p>#2</p></SecondFragment>
+            </_ProductComponent>
+        }
+    </div>
+}
+
+@code {
+    List<Product> products = new()
+{
+        new()
+        {
+            Id = 1,
+            Name = "First Product",
+            Price = 4.99,
+            IsActive = true,
+            ProductProperties = new List<ProductProperty>()
+{
+               new ProductProperty{Key = "Flavour", Value = "Strawberry"},
+               new ProductProperty{Key = "Size", Value = "6.5m"},
+               new ProductProperty{Key = "Category", Value = "Standard"}
+            }
+        },
+        new ()
+        {
+            Id = 2,
+            Name = "Second Product",
+            Price = 15.99,
+            IsActive = false,
+            ProductProperties = new List<ProductProperty>()
+{
+                new ProductProperty{Key = "Flavour", Value = "Chocolate" },
+                new ProductProperty{Key = "Size", Value = "15m"},
+                new ProductProperty { Key = "Category", Value = "Special" }
+            }
+        },
+        new()
+        {
+            Id = 3,
+            Name = "Third Product",
+            Price = 6.99,
+            IsActive = true,
+            ProductProperties = new List<ProductProperty>()
+{
+               new ProductProperty{Key = "Flavour", Value = "Banana"},
+               new ProductProperty{Key = "Size", Value = "1.5m"},
+               new ProductProperty{Key = "Category", Value = "Standard"}
+            }
+        },
+        new ()
+        {
+            Id = 4,
+            Name = "Fourth Product",
+            Price = 19.99,
+            IsActive = false,
+            ProductProperties = new List<ProductProperty>()
+{
+                new ProductProperty{Key = "Flavour", Value = "Chocolate" },
+                new ProductProperty{Key = "Size", Value = "10m"},
+                new ProductProperty { Key = "Category", Value = "Special" }
+            }
+        },
+        new()
+        {
+            Id = 5,
+            Name = "Fifth Product",
+            Price = 1.99,
+            IsActive = true,
+            ProductProperties = new List<ProductProperty>()
+{
+               new ProductProperty{Key = "Flavour", Value = "Strawberry"},
+               new ProductProperty{Key = "Size", Value = "6.5m"},
+               new ProductProperty{Key = "Category", Value = "Standard"}
+            }
+        },
+        new ()
+        {
+            Id = 6,
+            Name = "Sixth Product",
+            Price = 15.99,
+            IsActive = false,
+            ProductProperties = new List<ProductProperty>()
+{
+                new ProductProperty{Key = "Flavour", Value = "Chocolate" },
+                new ProductProperty{Key = "Size", Value = "89m"},
+                new ProductProperty { Key = "Category", Value = "Extreme" }
+            }
+        },
+        new()
+        {
+            Id = 7,
+            Name = "Seventh Product",
+            Price = 4.99,
+            IsActive = true,
+            ProductProperties = new List<ProductProperty>()
+{
+               new ProductProperty{Key = "Flavour", Value = "Strawberry"},
+               new ProductProperty{Key = "Size", Value = "6.5m"},
+               new ProductProperty{Key = "Category", Value = "Special"}
+            }
+        },
+        new ()
+        {
+            Id = 8,
+            Name = "Eigth Product",
+            Price = 15.99,
+            IsActive = false,
+            ProductProperties = new List<ProductProperty>()
+{
+                new ProductProperty{Key = "Flavour", Value = "Chocolate" },
+                new ProductProperty{Key = "Size", Value = "15m"},
+                new ProductProperty { Key = "Category", Value = "Large" }
+            }
+        },
+
+        new ()
+        {
+            Id = 9,
+            Name = "Ninth Product",
+            Price = 15.99,
+            IsActive = false,
+            ProductProperties = new List<ProductProperty>()
+{
+                new ProductProperty{Key = "Flavour", Value = "Chocolate" },
+                new ProductProperty{Key = "Size", Value = "15m"},
+                new ProductProperty { Key = "Category", Value = "Large" }
+            }
+        },
+
+        new ()
+        {
+            Id = 10,
+            Name = "Tenth Product",
+            Price = 15.99,
+            IsActive = false,
+            ProductProperties = new List<ProductProperty>()
+{
+                new ProductProperty{Key = "Flavour", Value = "Chocolate" },
+                new ProductProperty{Key = "Size", Value = "15m"},
+                new ProductProperty { Key = "Category", Value = "Large" }
+            }
+        }
+    };
+
+    private int FavouriteCount { get; set; } = 0;
+    protected void FavouritedUpdate(bool isSelected)
+    {
+        FavouriteCount += isSelected ? 1 : -1;
+    }
+
+    private string LastSelectedProductName { get; set; } = String.Empty;
+    protected void LastSelectedProductUpdate(string productName)
+    {
+        LastSelectedProductName = productName;
+    }
+}
+

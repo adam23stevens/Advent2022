@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <None Remove="Pages\LearnBlazor\" />
+    <None Remove="Pages\LearnBlazor\LearnBlazorComponents\" />
+    <None Remove="Helper\" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Pages\Category\" />
+    <None Remove="Pages\Products\" />
+    <None Remove="Service\" />
+    <None Remove="Syncfusion.Blazor.RichTextEditor" />
+    <None Remove="Syncfusion.Blazor.Themes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\LearnBlazor\" />
+    <Folder Include="Pages\LearnBlazor\LearnBlazorComponents\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="Helper\" />
+    <Folder Include="Pages\Category\" />
+    <Folder Include="Pages\Products\" />
+    <Folder Include="Service\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Blazor_Models\Blazor_Models.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Blazor_Infrastructure\Blazor_Infrastructure.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Blazor_Business\Blazor_Business.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Syncfusion.Blazor.RichTextEditor" Version="20.3.0.59" />
+    <PackageReference Include="Syncfusion.Blazor.Themes" Version="20.3.0.59" />
+  </ItemGroup>
+</Project>

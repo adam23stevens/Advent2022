@@ -1,0 +1,44 @@
+﻿<div class="modal fade" data-backkdrop="static" data-keyboard="false" id="deleteConfirmationModal" tabindex="1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h5 class="modal-title" id="modalTitle">Confirm delete</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="close" @onclick="() => OnConfirmDelete(false)">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete?
+            </div>
+            @if (IsParentProcessing)
+            {
+                <div class="modal-footer">
+                    <h5>Processing...</h5>
+                </div>
+            }
+            else
+            {
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="() => OnConfirmDelete(false)">Cancel</button>
+                    <button type="button" class="btn btn-danger" @onclick="() => OnConfirmDelete(true)">Delete</button>
+                </div>
+
+            }
+
+        </div>
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public bool IsParentProcessing { get; set; }
+    [Parameter]
+    public EventCallback<bool> OnDeleteConfirm { get; set; }
+
+    private async Task OnConfirmDelete(bool confirmation)
+    {
+        await OnDeleteConfirm.InvokeAsync(confirmation);
+    }
+}

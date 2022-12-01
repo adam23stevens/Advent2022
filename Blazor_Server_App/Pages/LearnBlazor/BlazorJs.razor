@@ -1,0 +1,23 @@
+﻿@page "/learnBlazor/BlazorJs"
+
+@inject IJSRuntime _JsRuntime
+
+    <div class="row">
+        <button title="Toast Success" class="btn btn-success w-200" onclick="@OnClickToastSuccess">Success</button>
+        <button title="Toast Error" class="btn btn-danger w-200" onclick="@OnClickToastError">Error</button>
+    </div>
+
+    <div class="row">
+        <button title="Sweetalert Success" class="btn btn-success w-200" onclick="@OnClickAlertSuccess">Alert Success</button>
+        <button title="Sweetalert Error" class="btn btn-success w-200" onclick="@OnClickAlertError">Alert Error</button>
+    </div>
+
+
+
+    @code {
+        private async void OnClickToastSuccess() => await _JsRuntime.ToastrSuccess("Success happened!");
+        private async void OnClickToastError() => await _JsRuntime.ToastrFailure("There was an error!");
+
+        private async void OnClickAlertSuccess() => await _JsRuntime.SweetAlertSuccess("Super Sweet Success!");
+        private async void OnClickAlertError() => await _JsRuntime.SweetAlertError("Dayum bad error! :(");
+    }

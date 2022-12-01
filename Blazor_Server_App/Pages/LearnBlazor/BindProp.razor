@@ -1,0 +1,110 @@
+﻿@page "/learnBlazor/bindProp"
+
+<h2 class="text-success">Individual Product</h2>
+<div class="row">
+    <div class="col-5">
+        <div class="row border p-3">
+            <h3 class="text-primary">Product Playground</h3> <hr />
+            <div>
+                <input type="text" @bind="@product.Price" @bind:event="oninput" /> <br />
+                <input type="checkbox" @bind="@product.IsActive" /> <br />
+                <select @bind="selectedProp">
+                    @foreach (var prop in product.ProductProperties)
+                    {
+                        <option value="@prop.Key">@prop.Key</option>
+                    }
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col-5">
+        <div class="row border p-3">
+            <h3 class="text-primary">Product Overview</h3><hr />
+            <div>
+                <strong>Name </strong> @product.Name <br />
+                <strong>Is Active? </strong> @product.IsActive <br />
+                <strong>Product Property Value </strong> @getSelectedPropValue()
+            </div>
+        </div>
+    </div>
+    
+    <div class="row border p-3">
+        <table>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Price £</td>
+                    <td>Is Active</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var pdct in products)
+                {
+                    <tr>
+                        <td>
+                            <input type="text" @bind="pdct.Name" @bind:event="oninput" />
+                        </td>
+                        <td>
+                            <input type="number" @bind="pdct.Price" @bind:event="oninput" />
+                        </td>
+                        <td>
+                            <input type="checkbox" @bind-value="pdct.IsActive" checked="@(pdct.IsActive?"checked":null)"/>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="row border p3">
+        <h3 class="text-secondary">Product Summary</h3> <hr/>
+        @foreach (var pdct in products)
+        {
+            <p>@pdct.Description</p>
+        }
+    </div>
+</div>
+@code {
+
+    private string selectedProp = "";
+
+    List<Product> products = new();
+    Product product;
+
+    private string? getSelectedPropValue() => product.ProductProperties.FirstOrDefault(p => p.Key == selectedProp)?.Value;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        products.Add(new()
+        {
+            Id = 1,
+            Name = "First Product",
+            Price = 4.99,
+            IsActive = true,
+            ProductProperties = new List<ProductProperty>()
+{
+            new ProductProperty{Key = "Flavour", Value = "Strawberry"},
+            new ProductProperty{Key = "Size", Value = "6.5m"},
+            new ProductProperty{Key = "Category", Value = "Standard"}
+         }
+
+        });
+        products.Add(new()
+        {
+            Id = 2,
+            Name = "Second Product",
+            Price = 15.99,
+            IsActive = false,
+            ProductProperties = new List<ProductProperty>
+        ()
+{
+    new ProductProperty{Key = "Flavour", Value = "Chocolate" },
+    new ProductProperty{Key = "Size", Value = "15m"},
+    new ProductProperty{Key = "Category", Value = "Large"}
+    }
+        });
+        product = products.First();
+    }
+}
+

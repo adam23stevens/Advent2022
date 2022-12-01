@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="LearnBlazor.Models\" />
+    <None Remove="Ensure.That" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LearnBlazor.Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Ensure.That" Version="10.1.0" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+﻿
+@if (IsActive)
+{
+    <div class="row mb-2">
+        <div class="col-4">
+            <button class="btn btn-success">Edit</button>
+            <button class="btn btn-danger">Delete</button>
+        </div>
+    </div>
+}
+
+
+@code {
+[Parameter]
+    public bool IsActive { get; set; }
+}
+
