@@ -12,7 +12,7 @@ namespace Advent2022.DayOne
 
             foreach (var l in Lines)
             {
-                if (l.Length >0)
+                if (l.Length > 0)
                 {
                     retList.Add(int.Parse(l));
                 }
@@ -24,6 +24,6 @@ namespace Advent2022.DayOne
 
             return retList;
         }
-	}
+	}    
 }
 
