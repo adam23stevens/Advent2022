@@ -8,36 +8,26 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Adam.Stevens\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/adamstevens/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\Advent\\2022\\Advent2022\\Advent2022.csproj",
+      "projectUniqueName": "/Users/adamstevens/Documents/Dev/Advent2022/Advent2022.csproj",
       "projectName": "Advent2022",
-      "projectPath": "D:\\dev\\Advent\\2022\\Advent2022\\Advent2022.csproj",
-      "packagesPath": "C:\\Users\\Adam.Stevens\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\Advent\\2022\\Advent2022\\obj\\",
+      "projectPath": "/Users/adamstevens/Documents/Dev/Advent2022/Advent2022.csproj",
+      "packagesPath": "/Users/adamstevens/.nuget/packages/",
+      "outputPath": "/Users/adamstevens/Documents/Dev/Advent2022/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Adam.Stevens\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/adamstevens/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages": {},
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://pkgs.dev.azure.com/dcslsoftwareltd/_packaging/DCSL_Nuget/nuget/v3/index.json": {}
+        "/usr/local/share/dotnet/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
@@ -70,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
       }
     }
   }

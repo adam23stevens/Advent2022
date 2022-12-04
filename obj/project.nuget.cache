@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JO7VewARgcKFKCi+hqPHPl6bD1Fxu60asHODoh5a+SG2ivQ5//jIvZMoJjgPnlM2dzrvh5YLKMj6noicrUicFQ==",
+  "dgSpecHash": "q5TvzVtP8ZoKtMRK1Bi0WPrEdw5OqTSWZNMCF0hwnfKDMEFbkXX8D0hc/cuCV23zKPmEc4ulDjgp3LlcK67vAQ==",
   "success": true,
-  "projectFilePath": "D:\\dev\\Advent\\2022\\Advent2022\\Advent2022.csproj",
+  "projectFilePath": "/Users/adamstevens/Documents/Dev/Advent2022/Advent2022.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

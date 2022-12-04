@@ -1,10 +1,13 @@
 ﻿<Properties StartupConfiguration="{21BF4156-17D5-4513-A2FD-B0CCCCC4FF38}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DayOne/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DayOne/FileReader.cs">
     <Files>
-      <File FileName="Program.cs" Line="3" Column="1" />
-      <File FileName="DayOne/FileReader.cs" Line="7" Column="10" />
+      <File FileName="Program.cs" />
+      <File FileName="DayOne/FileReader.cs" Line="17" Column="47" />
       <File FileName="DayOne/Program.cs" Line="15" Column="6" />
+      <File FileName="DayTwo/Program.cs" Line="1" Column="1" />
+      <File FileName="DayTwo/input.txt" Line="1" Column="1" />
+      <File FileName="DayOne/input.txt" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,18 +15,19 @@
           <Node name="Advent2022" expanded="True">
             <Node name="Advent2022" expanded="True">
               <Node name="DayOne" expanded="True">
-                <Node name="Program.cs" selected="True" />
+                <Node name="FileReader.cs" selected="True" />
               </Node>
+              <Node name="DayTwo" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.Advent2022 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
