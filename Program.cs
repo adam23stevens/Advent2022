@@ -12,5 +12,8 @@ PrintAnswer(3, 2, Advent2022.DayThree.Program.GetAnswer2());
 PrintAnswer(4, 1, Advent2022.DayFour.Program.GetAnswer1());
 PrintAnswer(4, 2, Advent2022.DayFour.Program.GetAnswer2());
 
+PrintAnswer(5, 1, Advent2022.DayFive.Program.GetAnswer1());
+PrintAnswer(5, 2, Advent2022.DayFive.Program.GetAnswer2());
+
 static void PrintAnswer(int day, int part, string answer) =>
     Console.WriteLine($"Day {day} | Part {part} | Answer {answer}");

@@ -1,22 +1,29 @@
 ﻿<Properties StartupConfiguration="{21BF4156-17D5-4513-A2FD-B0CCCCC4FF38}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DayOne/FileReader.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DayThree/Program.cs">
     <Files>
-      <File FileName="Program.cs" />
+      <File FileName="Program.cs" Line="13" Column="60" />
       <File FileName="DayOne/FileReader.cs" Line="17" Column="47" />
       <File FileName="DayOne/Program.cs" Line="15" Column="6" />
-      <File FileName="DayTwo/Program.cs" Line="1" Column="1" />
-      <File FileName="DayTwo/input.txt" Line="1" Column="1" />
-      <File FileName="DayOne/input.txt" Line="1" Column="1" />
+      <File FileName="DayTwo/Program.cs" Line="14" Column="10" />
+      <File FileName="DayTwo/input.txt" />
+      <File FileName="DayOne/input.txt" />
+      <File FileName="DayThree/FileReader.cs" Line="13" Column="6" />
+      <File FileName="DayThree/Program.cs" Line="17" Column="6" />
+      <File FileName="DayTwo/FileReader.cs" Line="11" Column="9" />
+      <File FileName="DayThree/input.txt" Line="300" Column="37" />
+      <File FileName="DayThree/test_input.txt" Line="1" Column="1" />
+      <File FileName="DayFour/FileReader.cs" Line="8" Column="42" />
+      <File FileName="DayFour/Program.cs" Line="47" Column="1" />
+      <File FileName="DayFour/input.txt" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Advent2022" expanded="True">
-            <Node name="Advent2022" expanded="True">
-              <Node name="DayOne" expanded="True">
-                <Node name="FileReader.cs" selected="True" />
-              </Node>
+            <Node name="Advent2022" expanded="True" selected="True">
+              <Node name="DayFour" expanded="True" />
+              <Node name="DayOne" expanded="True" />
+              <Node name="DayThree" expanded="True" />
               <Node name="DayTwo" expanded="True" />
             </Node>
           </Node>
@@ -26,8 +33,9 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Advent2022 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Advent2022 PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
