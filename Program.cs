@@ -18,5 +18,8 @@ PrintAnswer(5, 2, Advent2022.DayFive.Program.GetAnswer2());
 PrintAnswer(6, 1, Advent2022.DaySix.Program.GetAnswer1());
 PrintAnswer(6, 2, Advent2022.DaySix.Program.GetAnswer2());
 
+PrintAnswer(7, 1, Advent2022.DaySeven.Program.GetAnswer1());
+PrintAnswer(7, 2, Advent2022.DaySeven.Program.GetAnswer2());
+
 static void PrintAnswer(int day, int part, string answer) =>
     Console.WriteLine($"Day {day} | Part {part} | Answer {answer}");
