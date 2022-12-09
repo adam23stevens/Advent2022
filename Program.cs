@@ -21,5 +21,11 @@ PrintAnswer(6, 2, Advent2022.DaySix.Program.GetAnswer2());
 PrintAnswer(7, 1, Advent2022.DaySeven.Program.GetAnswer1());
 PrintAnswer(7, 2, Advent2022.DaySeven.Program.GetAnswer2());
 
+PrintAnswer(8, 1, Advent2022.DayEight.Program.GetAnswer1());
+PrintAnswer(8, 2, Advent2022.DayEight.Program.GetAnswer2());
+
+PrintAnswer(9, 1, Advent2022.DayNine.Program.GetAnswer1());
+PrintAnswer(9, 2, Advent2022.DayNine.Program.GetAnswer2());
+
 static void PrintAnswer(int day, int part, string answer) =>
     Console.WriteLine($"Day {day} | Part {part} | Answer {answer}");
