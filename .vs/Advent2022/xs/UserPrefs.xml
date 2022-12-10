@@ -1,19 +1,16 @@
 ﻿<Properties StartupConfiguration="{21BF4156-17D5-4513-A2FD-B0CCCCC4FF38}|Default">
+  <MonoDevelop.Ide.ItemProperties.Advent2022 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DayNine/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DayTen/Program.cs">
     <Files>
-      <File FileName="Program.cs" />
+      <File FileName="Program.cs" Line="28" Column="60" />
       <File FileName="DayOne/FileReader.cs" />
       <File FileName="DayOne/Program.cs" />
       <File FileName="DayTwo/Program.cs" />
       <File FileName="DayTwo/input.txt" />
       <File FileName="DayOne/input.txt" />
-      <File FileName="DayThree/FileReader.cs" />
+      <File FileName="DayThree/FileReader.cs" Line="6" Column="9" />
       <File FileName="DayThree/Program.cs" />
       <File FileName="DayTwo/FileReader.cs" />
       <File FileName="DayThree/input.txt" />
@@ -36,11 +33,14 @@
       <File FileName="DaySeven/Program.cs" />
       <File FileName="DaySeven/input.txt" />
       <File FileName="../Advent2015/DayTwo/FileReader.cs" />
-      <File FileName="DayEight/FileReader.cs" Line="11" Column="16" />
-      <File FileName="DayEight/Program.cs" Line="48" Column="1" />
+      <File FileName="DayEight/FileReader.cs" />
+      <File FileName="DayEight/Program.cs" />
       <File FileName="DayEight/test_input.txt" />
-      <File FileName="DayNine/FileReader.cs" Line="15" Column="1" />
-      <File FileName="DayNine/Program.cs" Line="17" Column="32" />
+      <File FileName="DayNine/FileReader.cs" Line="8" Column="54" />
+      <File FileName="DayNine/Program.cs" Line="93" Column="47" />
+      <File FileName="DayNine/test_input.txt" Line="1" Column="1" />
+      <File FileName="DayTen/FileReader.cs" Line="11" Column="28" />
+      <File FileName="DayTen/Program.cs" Line="6" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -58,6 +58,7 @@
               <Node name="DayOne" expanded="True" />
               <Node name="DaySeven" expanded="True" />
               <Node name="DaySix" expanded="True" />
+              <Node name="DayTen" expanded="True" />
               <Node name="DayThree" expanded="True" />
               <Node name="DayTwo" expanded="True" />
             </Node>
@@ -67,5 +68,8 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Advent2015 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.Advent2022 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
 </Properties>
