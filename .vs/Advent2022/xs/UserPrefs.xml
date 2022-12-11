@@ -1,46 +1,16 @@
 ﻿<Properties StartupConfiguration="{21BF4156-17D5-4513-A2FD-B0CCCCC4FF38}|Default">
+  <MonoDevelop.Ide.ItemProperties.Advent2015 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Advent2022 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DayTen/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DayEleven/Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="28" Column="60" />
-      <File FileName="DayOne/FileReader.cs" />
-      <File FileName="DayOne/Program.cs" />
-      <File FileName="DayTwo/Program.cs" />
-      <File FileName="DayTwo/input.txt" />
-      <File FileName="DayOne/input.txt" />
-      <File FileName="DayThree/FileReader.cs" Line="6" Column="9" />
-      <File FileName="DayThree/Program.cs" />
-      <File FileName="DayTwo/FileReader.cs" />
-      <File FileName="DayThree/input.txt" />
-      <File FileName="DayThree/test_input.txt" />
-      <File FileName="DayFour/FileReader.cs" Line="12" Column="10" />
-      <File FileName="DayFour/Program.cs" />
-      <File FileName="DayFour/input.txt" />
-      <File FileName="DayFive/FileReader.cs" />
-      <File FileName="DayFive/Program.cs" />
-      <File FileName="../Advent2015/Program.cs" />
-      <File FileName="README.md" />
-      <File FileName="../Advent2015/DayOne/FileReader.cs" />
-      <File FileName="../Advent2015/DayOne/Program.cs" />
-      <File FileName="../Advent2015/DayTwo/Program.cs" />
-      <File FileName="../Advent2015/DayTwo/test_input.txt" />
-      <File FileName="../Advent2015/DayTwo/input.txt" />
-      <File FileName="DaySix/FileReader.cs" />
-      <File FileName="DaySix/Program.cs" />
-      <File FileName="DaySeven/FileReader.cs" />
-      <File FileName="DaySeven/Program.cs" />
-      <File FileName="DaySeven/input.txt" />
-      <File FileName="../Advent2015/DayTwo/FileReader.cs" />
-      <File FileName="DayEight/FileReader.cs" />
-      <File FileName="DayEight/Program.cs" />
-      <File FileName="DayEight/test_input.txt" />
-      <File FileName="DayNine/FileReader.cs" Line="8" Column="54" />
-      <File FileName="DayNine/Program.cs" Line="93" Column="47" />
-      <File FileName="DayNine/test_input.txt" Line="1" Column="1" />
-      <File FileName="DayTen/FileReader.cs" Line="11" Column="28" />
-      <File FileName="DayTen/Program.cs" Line="6" Column="31" />
+      <File FileName="../Advent2015/DayEleven/Program.cs" Line="10" Column="1" />
+      <File FileName="../Advent2015/DayEleven/FileReader.cs" Line="19" Column="29" />
+      <File FileName="Program.cs" Line="28" Column="50" />
+      <File FileName="../Advent2015/DayOne/Program.cs" Line="1" Column="1" />
+      <File FileName="DayEleven/FileReader.cs" Line="1" Column="1" />
+      <File FileName="DayEleven/Program.cs" Line="36" Column="57" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -52,6 +22,9 @@
             </Node>
             <Node name="Advent2022" expanded="True">
               <Node name="DayEight" expanded="True" />
+              <Node name="DayEleven" expanded="True">
+                <Node name="Program.cs" selected="True" />
+              </Node>
               <Node name="DayFive" expanded="True" />
               <Node name="DayFour" expanded="True" />
               <Node name="DayNine" expanded="True" />
@@ -67,9 +40,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Advent2015 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/adamstevens/Documents/Dev/Advent2015/DayEleven/Program.cs" line="9" column="1" />
+      <Breakpoint file="/Users/adamstevens/Documents/Dev/Advent2022/DayEleven/Program.cs" relfile="DayEleven/Program.cs" line="9" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

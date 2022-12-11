@@ -39,32 +39,32 @@ namespace Advent2022.DayTen
 
                 if (cycleRegister.Key <= 40)
 				{
-                    char output = listNums.Contains(cycleRegister.Key -1) ? '#' : '.';
+                    char output = listNums.Contains(cycleRegister.Key -1) ? '#' : ' ';
                     sb1.Append(output);
 				}
 				else if (cycleRegister.Key <= 80)
 				{
-                    char output = listNums.Contains(cycleRegister.Key - 41) ? '#' : '.';
+                    char output = listNums.Contains(cycleRegister.Key - 41) ? '#' : ' ';
                     sb2.Append(output);
 				}
 				else if (cycleRegister.Key <= 120)
 				{
-                    char output = listNums.Contains(cycleRegister.Key - 81) ? '#' : '.';
+                    char output = listNums.Contains(cycleRegister.Key - 81) ? '#' : ' ';
                     sb3.Append(output);
 				}
 				else if (cycleRegister.Key <= 160)
 				{
-                    char output = listNums.Contains(cycleRegister.Key - 121) ? '#' : '.';
+                    char output = listNums.Contains(cycleRegister.Key - 121) ? '#' : ' ';
                     sb4.Append(output);
 				}
 				else if (cycleRegister.Key <= 200)
 				{
-                    char output = listNums.Contains(cycleRegister.Key - 161) ? '#' : '.';
+                    char output = listNums.Contains(cycleRegister.Key - 161) ? '#' : ' ';
                     sb5.Append(output);
 				}
 				else if (cycleRegister.Key <= 240)
 				{
-                    char output = listNums.Contains(cycleRegister.Key - 201) ? '#' : '.';
+                    char output = listNums.Contains(cycleRegister.Key - 201) ? '#' : ' ';
                     sb6.Append(output);
 				}
 			}

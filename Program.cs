@@ -31,6 +31,9 @@ PrintAnswer(10, 1, Advent2022.DayTen.Program.GetAnswer1());
 PrintAnswer(10, 2, ":");
 Advent2022.DayTen.Program.GetAnswer2();
 
+PrintAnswer(11, 1, Advent2022.DayEleven.Program.GetAnswer1());
+PrintAnswer(11, 2, Advent2022.DayEleven.Program.GetAnswer2());
+
 
 
 static void PrintAnswer(int day, int part, string answer) =>
